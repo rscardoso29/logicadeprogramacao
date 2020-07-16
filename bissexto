@@ -1,0 +1,17 @@
+algoritmo "Bissexto"
+// Função : Calcular ano bissexto
+// Autor : Pkador
+// Data : 16/07/2020
+// Seção de Declarações 
+var
+   ano: inteiro
+   inicio
+      escreval("digite um ano: ")
+      leia(ano)
+           se (ano % 4=0) entao
+         escreval("O ano é bissexto")
+      senao
+         escreval("O ano não é bissexto")
+      fimse
+
+fimalgoritmo
