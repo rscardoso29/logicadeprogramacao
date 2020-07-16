@@ -1,0 +1,24 @@
+algoritmo "promodiadasmaes"
+// Função : dar descontos 13% para mulheres e 5% para homens.
+// Autor :  pkador
+// Data : 16/07/2020
+// Seção de Declarações 
+var
+    Nome: caractere
+    valor,vdesc: real
+    sexo: inteiro
+inicio
+      escreval("Qual seu nome: ")
+      leia(nome)
+      escreval("[1] HOMEM [2] MULHER")
+      leia(sexo)
+      escreval("Qual valor de suas compras? ")
+      leia(valor)
+                 se (SEXO=1)entao
+                 vdesc<-valor-(valor*5/100)
+                 escreval("O valor de suas compras será R$ ",vdesc)
+                 senao
+                 vdesc<-valor-(valor*13/100)
+                 escreval("O valor de suas compras será R$ ",vdesc)
+      fimse
+fimalgoritmo
