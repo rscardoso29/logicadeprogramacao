@@ -1,0 +1,35 @@
+algoritmo "calculoIMC"
+// Função :Calcular os níveis de IMC
+// Autor :Pkador
+// Data : 14/07/2020
+// Seção de Declarações 
+var
+   peso, altura, imc: real
+
+inicio
+      escreval("Digite aqui seu Peso (KG): ")
+      leia(peso)
+      escreval("Digite aqui sua altura : ")
+      leia(altura)
+      imc<- peso/(altura*altura)
+      se (imc<18.5) entao
+         escreva("Seu imc é ",imc:5:2," Magreza")
+         senao
+              se(imc>=18.5) e (imc<24.99) entao
+                Escreva("Seu IMC ", imc:5:2, " normal")
+                senao
+                     se(imc>=25) e (imc<29.99) entao
+                       escreva("Seu IMC: ", imc:5:2, " Sobrepeso")
+                       senao
+                            Se (imc>=30) e (imc<39.99) entao
+                               Escreva("Seu IMC: ", imc:5:2, " OBESIDADE")
+                               senao
+                                    se(imc>40)entao
+                                    escreva("Seu IMC: ", imc:5:2, " OBESIDADE GRAVE")
+                                    fimSe
+                            fimse
+                     fimSe
+              fimSe
+      fimSe
+
+fimalgoritmo
