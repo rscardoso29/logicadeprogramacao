@@ -1,0 +1,24 @@
+algoritmo "Sorteioaleatorio"
+// Função :Sorteio aleatorio de 0 a 10
+// Autor :Pkador
+// Data : 17/07/2020
+// Seção de Declarações 
+var
+   sortear, numero: inteiro
+inicio
+
+      escreval("Digite aqui o um número de 0 a 10: ")
+      leia(numero)
+                  enquanto (sortear <> numero) faca
+                  sortear<- randi(10)
+                  se (sortear = numero) entao
+                     escreval("Parabéns o número sorteado foi ",sortear," e você ACERTOU!!")
+                     senao
+                     escreval("Que pena você errou!")
+                     escreval("Vamos tentar  de novo? Tá sem sorte hein! Digita de novo: ")
+                     leia(numero)
+                     sortear<- randi(10)
+                  fimse
+      fimenquanto
+// Seção de Comandos 
+fimalgoritmo
