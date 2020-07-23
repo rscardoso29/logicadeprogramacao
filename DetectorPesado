@@ -1,0 +1,37 @@
+algoritmo "DectectorPesado"
+// Função :Verificar maipr peso.
+// Autor :Pkador
+// Data : 22/07/2020
+// Seção de Declarações 
+var
+   I: inteiro
+   N, Pesado : Caractere
+   P, Mai: real
+procedimento topo()
+inicio
+      limpatela
+      escreval("*********************************")
+      escreval("D E C T E T O R   DE  P E S A D O")
+      escreval("*********************************")
+      escreval("Maior peso até agora: ", Mai, "Kg")
+      escreval("*********************************")
+fimprocedimento
+
+inicio
+      topo()
+                      Para I <- 1 ate 5 faca
+                      escreval("Digite o nome: ")
+                      leia(N)
+                      escreval("Digite o peso de : ", N, " :")
+                      leia(P)
+                             se (P>Mai) entao
+                             Mai <- P
+                             Pesado <- N
+                             fimse
+                      topo()
+      fimpara
+      limpatela
+      topo()
+      escreval("A Pessoa mais pesada foi ", Pesado, ", com ", Mai, " quilos." )
+// Seção de Comandos 
+fimalgoritmo
