@@ -1,0 +1,23 @@
+algoritmo "Parouimpar"
+// Função :
+// Autor :
+// Data : 22/07/2020
+// Seção de Declarações 
+var
+   x: inteiro
+   procedimento rest(V: inteiro)
+   inicio
+   se (V % 2 = 0) entao
+   escreval ("O número", v, " é par")
+   senao
+   escreval("O numero ", v, " é impar")
+   fimse
+   fimprocedimento
+
+inicio
+      escreval("Digite um numero para verificar se é par ou impar: ")
+      leia(x)
+      rest(x)
+      
+// Seção de Comandos 
+fimalgoritmo
